@@ -1,0 +1,2038 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh" xml:lang="zh">
+
+<head>
+    <title>JavaScript</title>
+    <meta name="keywords" content=" reddit, reddit.com, vote, comment, submit " />
+    <meta name="description" content="reddit: the front page of the internet" />
+    <meta name="referrer" content="always">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=1024">
+    <link rel='icon' href="//www.redditstatic.com/icon.png" sizes="256x256" type="image/png" />
+    <link rel='shortcut icon' href="//www.redditstatic.com/favicon.ico" type="image/x-icon" />
+    <link rel='apple-touch-icon-precomposed' href="//www.redditstatic.com/icon-touch.png" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.reddit.com/r/javascript/.rss" />
+    <link rel="stylesheet" type="text/css" href="//www.redditstatic.com/reddit.x199Lg8m2VY.css" media="all">
+    <link rel="stylesheet" type="text/css" href="//www.redditstatic.com/old-markdown.Lcx8i-O12_8.css" media="all">
+    <!--[if gte IE 8]><!-->
+    <link rel="stylesheet" href="http://a.thumbs.redditmedia.com/UBbVgI1hVhcYJV9_kEwBh-GOYVISc0m4LEsAVasQb_0.css" title="applied_subreddit_stylesheet" type="text/css">
+    <!--<![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="//www.redditstatic.com/reddit-init.zh.rrdp3vJml0s.js"></script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]><script type="text/javascript" src="//www.redditstatic.com/reddit-init-legacy.zh.hi-2bF54S4k.js"></script><![endif]-->
+    <script type="text/javascript" id="config">
+    r.setup({
+        "ajax_domain": "www.reddit.com",
+        "server_time": 1420604468.0,
+        "post_site": "javascript",
+        "clicktracker_url": "//pixel.redditmedia.com/click",
+        "logged": "guankaishe",
+        "stats_domain": "https://stats.redditmedia.com",
+        "cur_domain": "reddit.com",
+        "https_forced": false,
+        "gold": false,
+        "is_fake": false,
+        "renderstyle": "html",
+        "over_18": true,
+        "vote_hash": "cYoZDA1lnewVHoh4wjAOCCkXKKm5KAG9y+jgFIs4jXOgNj5BieNMP39M8FIEeZ6WvLPZ1jjSxtOU7Q2lOOrtScBAVmJ3jkbIRosVbuQcm20bl5eP7ogEXR1Me4QzSGPwhl6Epbz5N1GizeBafY4NZ+qu0LgBAabs8Wntd3TtLHW298IcTuIpubE=",
+        "adtracker_url": "//pixel.redditmedia.com/pixel/of_doom.png",
+        "uitracker_url": "//pixel.redditmedia.com/pixel/of_discovery.png",
+        "modhash": "v0or3qj4ft07a8a82b066f3fec05957c2303aa98122e172db0",
+        "store_visits": false,
+        "new_window": false,
+        "send_logs": true,
+        "pageInfo": {
+            "actionName": "hot.GET_listing",
+            "verification": "adfad553bf3b6c42e703170c536073e9c1f952f0"
+        },
+        "https_endpoint": "https://www.reddit.com",
+        "static_root": "//www.redditstatic.com",
+        "extension": null,
+        "status_msg": {
+            "fetching": "\u6b63\u5728\u53d6\u5f97\u6a19\u984c",
+            "loading": "\u8f09\u5165\u4e2d",
+            "submitting": "\u767c\u9001\u4e2d..."
+        },
+        "stats_sample_rate": "1",
+        "debug": false,
+        "has_subscribed": true
+    })
+    </script>
+    <script type="text/javascript">
+    reddit.cur_site = "t5_2qh30";
+    </script>
+    <style type="text/css">
+    /* 自訂 css：使用本區塊在本頁面標頭中插入和翻譯相關的特殊 css */
+    </style>
+    <script type="text/javascript">
+    (function() {
+        var url = '//pixel.redditmedia.com/pixel/of_destiny.png?v=owg%2Fso53lKTj6Wq9Ne26tMdaI57tw04jEQQqUNbZT%2BdthT%2FbOjJRS9tZoGIUWVWf25NLmzSe5P386ofzsUXG%2BdLey3y6KDIW';
+        var cachebuster = Math.round(Math.random() * 2147483647);
+        var cachebusted_url = url + "&r=" + cachebuster;
+        var img = new Image();
+        img.src = cachebusted_url;
+    })();
+    </script>
+    <script type="text/javascript">
+    var user_type = 'loggedin';
+    var _gaq = _gaq || [];
+    _gaq.push(['_require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js'], ['_setAccount', 'UA-12131688-1'], ['_setDomainName', 'reddit.com'], ['_setCustomVar', 1, 'site', 'javascript', 3], ['_setCustomVar', 2, 'srpath', 'javascript-GET_listing', 3], ['_setCustomVar', 3, 'usertype', user_type, 2], ['_setCustomVar', 4, 'uitype', 'web', 3], ['_setSampleRate', '50'], ['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</head>
+
+<body class="listing-page hot-page loggedin old-markdown">
+    <div id="header" role="banner"><a tabindex="1" href="#content" id="jumpToContent">jump to content</a>
+        <div id="sr-header-area">
+            <div class="width-clip">
+                <div class="dropdown srdrop" onclick="open_menu(this)" onmouseover="hover_open_menu(this)">
+                    <span class="selected title">我的看板</span>
+                </div>
+                <div class="drop-choices srdrop"><a href="http://www.reddit.com/r/AdviceAnimals/" class="choice">AdviceAnimals</a><a href="http://www.reddit.com/r/announcements/" class="choice">announcements</a><a href="http://www.reddit.com/r/AskReddit/" class="choice">AskReddit</a><a href="http://www.reddit.com/r/askscience/" class="choice">askscience</a><a href="http://www.reddit.com/r/aww/" class="choice">aww</a><a href="http://www.reddit.com/r/bestof/" class="choice">bestof</a><a href="http://www.reddit.com/r/blog/" class="choice">blog</a><a href="http://www.reddit.com/r/books/" class="choice">books</a><a href="http://www.reddit.com/r/EarthPorn/" class="choice">EarthPorn</a><a href="http://www.reddit.com/r/explainlikeimfive/" class="choice">explainlikeimfive</a><a href="http://www.reddit.com/r/funny/" class="choice">funny</a><a href="http://www.reddit.com/r/gaming/" class="choice">gaming</a><a href="http://www.reddit.com/r/gifs/" class="choice">gifs</a><a href="http://www.reddit.com/r/IAmA/" class="choice">IAmA</a><a href="http://www.reddit.com/r/movies/" class="choice">movies</a><a href="http://www.reddit.com/r/Music/" class="choice">Music</a><a href="http://www.reddit.com/r/news/" class="choice">news</a><a href="http://www.reddit.com/r/node/" class="choice">node</a><a href="http://www.reddit.com/r/pics/" class="choice">pics</a><a href="http://www.reddit.com/r/science/" class="choice">science</a><a href="http://www.reddit.com/r/technology/" class="choice">technology</a><a href="http://www.reddit.com/r/television/" class="choice">television</a><a href="http://www.reddit.com/r/todayilearned/" class="choice">todayilearned</a><a href="http://www.reddit.com/r/videos/" class="choice">videos</a><a href="http://www.reddit.com/r/worldnews/" class="choice">worldnews</a><a href="http://www.reddit.com/r/WTF/" class="choice">WTF</a><a href="http://www.reddit.com/subreddits/" class="bottom-option choice">編輯訂閱</a>
+                </div>
+                <div class="sr-list">
+                    <ul class="flat-list sr-bar hover">
+                        <li><a href="http://www.reddit.com/" class="choice">首頁</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/all" class="choice">所有</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/random/" class="random choice">隨機</a>
+                        </li>
+                    </ul>
+                    <span class="separator">&nbsp;|&nbsp;</span>
+                    <ul class="flat-list sr-bar hover">
+                        <li><a href="http://www.reddit.com/r/funny/" class="choice">funny</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/pics/" class="choice">pics</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/AdviceAnimals/" class="choice">AdviceAnimals</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/todayilearned/" class="choice">todayilearned</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/aww/" class="choice">aww</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/WTF/" class="choice">WTF</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/videos/" class="choice">videos</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/AskReddit/" class="choice">AskReddit</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/gaming/" class="choice">gaming</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/gifs/" class="choice">gifs</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/worldnews/" class="choice">worldnews</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/news/" class="choice">news</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/technology/" class="choice">technology</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/science/" class="choice">science</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/movies/" class="choice">movies</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/IAmA/" class="choice">IAmA</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/Music/" class="choice">Music</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/explainlikeimfive/" class="choice">explainlikeimfive</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/bestof/" class="choice">bestof</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/EarthPorn/" class="choice">EarthPorn</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/television/" class="choice">television</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/askscience/" class="choice">askscience</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/books/" class="choice">books</a>
+                        </li>
+                        <li>
+                            <span class="separator">-</span><a href="http://www.reddit.com/r/node/" class="choice">node</a>
+                        </li>
+                    </ul>
+                </div><a href="http://www.reddit.com/subreddits/" id="sr-more-link">編輯 &raquo;</a>
+            </div>
+        </div>
+        <div id="header-bottom-left"><a href="/" id="header-img" class="default-header" title="">reddit.com</a>&nbsp;
+            <span class="hover pagename redditname"><a href="http://www.reddit.com/r/javascript/">javascript</a>
+            </span>
+            <ul class="tabmenu ">
+                <li class='selected'><a href="http://www.reddit.com/r/javascript/" class="choice">熱門</a>
+                </li>
+                <li><a href="http://www.reddit.com/r/javascript/new/" class="choice">最新</a>
+                </li>
+                <li><a href="http://www.reddit.com/r/javascript/rising/" class="choice">好評上升中</a>
+                </li>
+                <li><a href="http://www.reddit.com/r/javascript/controversial/" class="choice">具爭議的</a>
+                </li>
+                <li><a href="http://www.reddit.com/r/javascript/top/" class="choice">頭等</a>
+                </li>
+                <li><a href="http://www.reddit.com/r/javascript/gilded/" class="choice">精選</a>
+                </li>
+                <li><a href="http://www.reddit.com/r/javascript/wiki/" class="choice">wiki</a>
+                </li>
+                <li><a href="http://www.reddit.com/r/javascript/ads/" class="choice">宣傳過的</a>
+                </li>
+            </ul>
+        </div>
+        <div id="header-bottom-right">
+            <span class="user"><a href="http://www.reddit.com/user/guankaishe/">guankaishe</a>&nbsp;(
+                <span class="userkarma" title="link karma">30</span>)</span>
+            <span class="separator">|</span><a title="no new mail" href="http://www.reddit.com/message/inbox/" class="nohavemail" id="mail">信息</a>
+            <span class="separator">|</span>
+            <ul class="flat-list hover">
+                <li><a href="http://www.reddit.com/prefs/" class="pref-lang choice">偏好設定</a>
+                </li>
+            </ul>
+            <span class="separator">|</span>
+            <form method="post" action="http://www.reddit.com/logout" class="logout hover">
+                <input type="hidden" name="uh" value="v0or3qj4ft07a8a82b066f3fec05957c2303aa98122e172db0" />
+                <input type="hidden" name="top" value="off" />
+                <input type="hidden" name="dest" value="/r/javascript/" /><a href="javascript:void(0)" onclick="$(this).parent().submit()">登出</a>
+            </form>
+        </div>
+    </div>
+    <div class="side">
+        <div class='spacer'>
+            <form action="http://www.reddit.com/r/javascript/search" id="search" role="search">
+                <input type="text" name="q" placeholder="search" tabindex="20">
+                <input type="submit" value="" tabindex="22">
+                <div id="searchexpando" class="infobar">
+                    <label>
+                        <input type="checkbox" name="restrict_sr" tabindex="21">搜尋範圍僅限 /r/javascript</label>
+                    <div id="moresearchinfo">
+                        <p>use the following search parameters to narrow your results:</p>
+                        <dl>
+                            <dt>subreddit:<i>subreddit</i>
+                            </dt>
+                            <dd>find submissions in &quot;subreddit&quot;</dd>
+                            <dt>author:<i>username</i>
+                            </dt>
+                            <dd>依「使用者名稱」尋找發文</dd>
+                            <dt>site:<i>example.com</i>
+                            </dt>
+                            <dd>find submissions from &quot;example.com&quot;</dd>
+                            <dt>url:<i>text</i>
+                            </dt>
+                            <dd>search for &quot;text&quot; in url</dd>
+                            <dt>selftext:<i>text</i>
+                            </dt>
+                            <dd>在自行發文的內容中搜尋「文字」</dd>
+                            <dt>self:yes (or self:no)</dt>
+                            <dd>包含 (或排除) 自己的文章</dd>
+                            <dt>nsfw:yes (or nsfw:no)</dt>
+                            <dd>納入 (或排除) 標記為不適合公開閱覽的結果</dd>
+                        </dl>
+                        <p>e.g.&#32;
+                            <code>subreddit:aww site:imgur.com dog</code>
+                        </p>
+                        <p><a href="http://www.reddit.com/wiki/search">see the search faq for details.</a>
+                        </p>
+                    </div>
+                    <p><a href="http://www.reddit.com/wiki/search" id="search_showmore">進階搜尋：依照作者、版面...</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class='spacer'>
+            <div class="sponsorshipbox"></div>
+        </div>
+        <div class='spacer'>
+            <div class="sidebox submit submit-link">
+                <div class="morelink"><a href="http://www.reddit.com/r/javascript/submit" class="login-required" target="_top">發表新連結</a>
+                    <div class="nub"></div>
+                </div>
+            </div>
+        </div>
+        <div class='spacer'>
+            <div class="sidebox submit submit-text">
+                <div class="morelink"><a href="http://www.reddit.com/r/javascript/submit?selftext=true" class="login-required" target="_top">發表新文章</a>
+                    <div class="nub"></div>
+                </div>
+            </div>
+        </div>
+        <div class='spacer'>
+            <div class="titlebox">
+                <h1 class="hover redditname"><a href="http://www.reddit.com/r/javascript/" class="hover">javascript</a>
+                </h1>
+                <span class="subscribe-button fancy-toggle-button toggle" style="" data-sr_name="javascript"><a class="option active add login-required" href="#" tabindex="100" onclick="return toggle(this, subscribe('t5_2qh30'), unsubscribe('t5_2qh30'))">訂閱</a><a class="option remove" href="#">停止訂閱</a>
+                </span>
+                <span class="subscribers">
+                    <span class="number">57,643</span>&#32;
+                    <span class="word">讀者</span>
+                </span>
+                <p class="users-online fuzzed" title="過去 15 分鐘內檢視本看板的登入使用者人數">
+                    <span class="number">~53</span>&#32;
+                    <span class="word">users here now</span>
+                </p>
+                <form class="toggle flairtoggle">
+                    <input id="flair_enabled" type="checkbox" name="flair_enabled" checked="checked">
+                    <label for="flair_enabled">在這個看板上顯示我的使用者標籤。標籤顯示為：</label>
+                </form>
+                <div class="tagline"><a href="http://www.reddit.com/user/guankaishe" class="author may-blank id-t2_dimjs flairselectable">guankaishe</a>
+                    <span class="flair " title="switer">switer</span>(<a class="flairselectbtn" data-name="guankaishe" href="javascript://void(0)">編輯</a>)
+                    <div class="flairselector drop-choices"></div>
+                    <span class="userattrs"></span>
+                </div>
+                <form action="#" class="usertext" onsubmit="return post_form(this, 'editusertext')" id="form-t5_2qh30q8s">
+                    <input type="hidden" name="thing_id" value="t5_2qh30" />
+                    <div class="usertext-body may-blank-within md-container">
+                        <div class="md">
+                            <p>All about the JavaScript programming language.</p>
+
+                            <hr/>
+
+                            <p><a href="http://www.reddit.com/r/javascript/wiki/index">Subreddit Guidelines</a>
+                            </p>
+
+                            <p><a href="http://www.reddit.com/r/javascript/wiki/faq">Frequently Asked Questions</a>
+                            </p>
+
+                            <hr/>
+
+                            <p>
+                                <strong>Specifications:</strong>
+                            </p>
+
+                            <ul>
+                                <li><a href="http://es5.github.io/">ES 5.1</a> (current)</li>
+                                <li><a href="https://people.mozilla.org/%7Ejorendorff/es6-draft.html">ES 6</a> (draft)</li>
+                            </ul>
+
+                            <hr/>
+
+                            <p>
+                                <strong>Some useful resources:</strong>
+                            </p>
+
+                            <ul>
+                                <li><a href="http://caniuse.com/">Can I use...</a> - Compatibility matrix for web-related technologies</li>
+                                <li><a href="http://stackoverflow.com">Stack Overflow</a> - For help with your code</li>
+                                <li><a href="http://webreflection.blogspot.com/">Web Reflection</a> - A nice JS Blog</li>
+                                <li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a> - a great (and trusted) resource for JavaScript and more</li>
+                                <li><a href="http://movethewebforward.org/">Move The Web Forward</a> - The newest community initiative, how you can get involved in the community and help out</li>
+                                <li><a href="http://jsfiddle.net/">JSFiddle</a> - Tool for prototyping, playing around with JS/HTML/CSS</li>
+                                <li><a href="/r/dailyprogrammer">The Daily Programmer</a> - Daily programming challenges (not necessarily JS related)</li>
+                            </ul>
+
+                            <hr/>
+
+                            <p>
+                                <strong>Related Sub-Reddits:</strong>
+                            </p>
+
+                            <p><a href="http://reddit.com/r/LearnJavascript">/r/LearnJavascript</a> 
+                            </p>
+
+                            <p><a href="http://reddit.com/r/webdev">/r/webdev</a> 
+                            </p>
+
+                            <p><a href="/r/mobilewebdev">/r/mobilewebdev</a> 
+                            </p>
+
+                            <p><a href="/r/frontend">/r/frontend</a>
+                            </p>
+
+                            <p><a href="http://reddit.com/r/node+nodejs">/r/node+nodejs</a> 
+                            </p>
+
+                            <p><a href="http://reddit.com/r/jquery">/r/jquery</a> 
+                            </p>
+
+                            <p><a href="/r/webgl">/r/webgl</a>
+                            </p>
+
+                            <p><a href="/r/threejs">/r/threejs</a>
+                            </p>
+
+                            <p><a href="http://reddit.com/r/coffeescript">/r/coffeescript</a> 
+                            </p>
+
+                            <p><a href="http://reddit.com/r/web_design">/r/web_design</a> 
+                            </p>
+
+                            <p><a href="/r/html5">/r/html5</a>
+                            </p>
+
+                            <p><a href="http://reddit.com/r/html">/r/html</a> 
+                            </p>
+
+                            <p><a href="http://reddit.com/r/php">/r/php</a> 
+                            </p>
+
+                            <p><a href="http://reddit.com/r/forhire">/r/forhire</a> 
+                            </p>
+
+                            <p><a href="http://reddit.com/r/redditdev">/r/redditdev</a>
+                            </p>
+
+                            <p><a href="http://reddit.com/r/enhancement">/r/enhancement</a>
+                            </p>
+
+                            <hr/>
+
+                            <p>
+                                <strong>Join us on IRC:</strong>
+                            </p>
+
+                            <p><a href="http://webchat.freenode.net/?channels=#r.javascript">Webchat</a>
+                                <br/>
+                                <a href="irc://irc.freenode.net/#r.javascript">Clients</a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+                <div class="bottom">
+                    <span class="age">社群已經成立&#32;
+                        <time title="Fri Jan 25 06:32:16 2008 UTC" datetime="2008-01-24T22:32:16-08:00">6 年</time>
+                    </span>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class='spacer'>
+            <iframe id="ad_main" frameborder="0" scrolling="no" name="ad_main" src="http://static.adzerk.net/reddit/ads.html?sr=javascript,loggedin&amp;bust2#http://www.reddit.com"></iframe>
+            <script type="text/javascript">
+            $(function() {
+                var ad = $("#ad_main");
+                if (!ad.length || ad.height() == 0 || ad.width() == 0 || ad.offset().left == 0) {
+                    $(".footer").append("<img alt='' src='//pixel.redditmedia.com/pixel/of_defenestration.png?hash=adblock0e31bc319d5b5882b0cddf147f4ce1da5ac9c731&id=adblock&random=" + Math.random() * 10000000000000000 + "'/>");
+                    $(window).trigger('adBlockEnabled', true)
+                } else {
+                    $(window).trigger('adBlockEnabled', false)
+                }
+            });
+            </script>
+        </div>
+        <div class='spacer'>
+            <div class="sidebox create">
+                <div class="morelink"><a href="http://www.reddit.com/subreddits/create" class="login-required" target="_top">建立您自己的看板</a>
+                    <div class="nub"></div>
+                </div>
+                <div class="spacer">
+                    <a href="http://www.reddit.com/subreddits/create" class="login-required"></a>
+                    <div class="subtitle">...why not Zoidberg?</div>
+                    <div class="subtitle">...for great justice.</div>
+                </div>
+            </div>
+        </div>
+        <div class='spacer'>
+            <div class="sidecontentbox "><a class="helplink" href="/message/compose?to=%2Fr%2Fjavascript">寄送訊息給版主</a>
+                <div class="title">
+                    <h1>版主</h1>
+                </div>
+                <ul class="content">
+                    <li><a href="http://www.reddit.com/user/jeresig" class="author may-blank id-t2_2fcz">jeresig</a>
+                        <span class="userattrs"></span>
+                    </li>
+                    <li><a href="http://www.reddit.com/user/honestbleeps" class="author may-blank id-t2_2539s">honestbleeps</a>
+                        <span class="flair " title="Reddit Enhancement Suite">Reddit Enhancement Suite</span>
+                        <span class="userattrs"></span>
+                    </li>
+                    <li><a href="http://www.reddit.com/user/AutoModerator" class="author may-blank id-t2_6l4z3">AutoModerator</a>
+                        <span class="userattrs"></span>
+                    </li>
+                    <li><a href="http://www.reddit.com/user/kenman" class="author may-blank id-t2_1mnc2">kenman</a>
+                        <span class="userattrs"></span>
+                    </li>
+                    <li class="more"><a href="/r/javascript/about/moderators">about moderation team &raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class='spacer'>
+            <div class="account-activity-box">
+                <p><a href="/account-activity">帳號活動</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a name="content"></a>
+    <div class="content" role="main">
+        <form onsubmit="return post_form(this, 'share')" method="post" id="sharelink_" class="pretty-form sharelink" action="/post/share" style='display:none'>
+            <div class="clearleft"></div>
+            <span class="error RATELIMIT field-ratelimit" style="display:none"></span>
+            <input type="hidden" name="parent" value="" />
+            <table class="sharetable preftable">
+                <tr class="">
+                    <th>
+                        <label for="share_to_">傳送此連結至</label>&nbsp;
+                        <span class="little gray">(電子郵件或使用者名稱清單)</span>
+                    </th>
+                    <td>
+                        <textarea id="share_to_" name="share_to" rows="4" cols="40" placeholder="email@example.com, /u/reddit, &hellip;"></textarea>
+                    </td>
+                    <td class="share-to-errors">
+                        <span class="error BAD_EMAILS field-share_to" style="display:none"></span>
+                        <span class="error TOO_MANY_EMAILS field-share_to" style="display:none"></span>
+                        <span class="error NO_EMAILS field-share_to" style="display:none"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="share_from_">您的姓名</label>&nbsp;
+                        <span class="little gray">(非必填項目)</span>
+                    </th>
+                    <td>
+                        <input class="real-name" value="guankaishe" type="text" id="share_from_" name="share_from" />
+                    </td>
+                    <td class="share-from-errors">
+                        <span class="error TOO_LONG field-share_from" style="display:none"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="replyto_">您的電子郵件地址</label>&nbsp;
+                        <span class="little gray">(非必填項目)</span>
+                    </th>
+                    <td>
+                        <input name="replyto" type="text" size="30" id="replyto_" />
+                    </td>
+                    <td class="reply-to-errors">
+                        <span class="error BAD_EMAILS field-replyto" style="display:none"></span>
+                        <span class="error TOO_MANY_EMAILS field-replyto" style="display:none"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="message_">訊息</label>&nbsp;
+                        <span class="little gray">(非必填項目)</span>
+                    </th>
+                    <td>
+                        <textarea id="message_" name="message" rows="4" cols="40"></textarea>
+                    </td>
+                    <td class="message-errors">
+                        <span class="error TOO_LONG field-message" style="display:none"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit" class="btn">分享</button>
+                        <button class="btn" onclick="return cancelShare(this);">取消</button>
+                        <span class="status error"></span>
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+        <div class='spacer'>
+            <div id="siteTable_organic" class="organic-listing loading">
+                <div class="help help-hoverable">這是什麼?
+                    <div id="spotlight-help" class="hover-bubble help-bubble anchor-top">
+                        <div class="help-section help-promoted">
+                            <p>本贊助商連結是使用我們的&#32;<a href="http://www.reddit.com/wiki/selfserve">self-serve advertisement tool</a>&#32;產生的廣告。</p>
+                            <p>Use of this tool is open to all members of reddit.com, and for as little as US$5.00 you can advertise in this area.&#32;<a href="http://www.reddit.com/advertising">Get started &rsaquo;</a>
+                            </p>
+                        </div>
+                        <div class="help-section help-organic">
+                            <p>This area shows new and upcoming links. Vote on links here to help them become popular, and click the forwards and backwards buttons to view more.</p>
+                            <form class="toggle disable_ui-button " action="#" method="get">
+                                <input type="hidden" name="executed" value="本元素已經停用。" />
+                                <input type="hidden" name="id" value="organic" />
+                                <span class="option main active">按下<a href="#" class="togglebutton" onclick="return toggle(this)">這裡</a>可停用本功能。</span>
+                                <span class="option error">你確定嗎？ &#32;<a href="javascript:void(0)" class="yes" onclick='change_state(this, "disable_ui", null, undefined, null)'>是</a>&#32;/&#32;<a href="javascript:void(0)" class="no" onclick="return toggle(this)">否</a>
+                                </span>
+                            </form>
+                        </div>
+                        <div class="help-section help-interestbar">
+                            <p>請輸入關鍵字或主題，以尋找您有興趣的新看板。請力求明確！</p>
+                            <p>您隨時可以在&#32;<a href="http://www.reddit.com/subreddits/">/subreddits/</a>&#32;頁面存取這項工具。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+            r.spotlight.setup([], 0.0, true, "javascript")
+            </script>
+        </div>
+        <div class='spacer'>
+            <style>
+            body >.content .link .rank,
+            .rank-spacer {
+                width: 2.2ex
+            }
+            body >.content .link .midcol,
+            .midcol-spacer {
+                width: 4.1ex
+            }
+            </style>
+            <div id="siteTable" class="sitetable linklisting">
+                <div class=" thing id-t3_2r9gw0 odd&#32; stickied link self" onclick="click_thing(this)" data-fullname="t3_2r9gw0">
+                    <p class="parent"></p>
+                    <span class="rank"></span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">3</div>
+                        <div class="score unvoted">4</div>
+                        <div class="score likes">5</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="/r/javascript/comments/2r9gw0/subreddit_stats_year_of_2014/" tabindex="1">[Subreddit Stats] Year of 2014</a>&#32;
+                            <span class="domain">(<a href="/r/javascript/">self.javascript</a>)</span>
+                        </p>
+                        <div class="expando-button collapsed selftext" onclick="expando_child(this)"></div>
+                        <p class="tagline">submitted&#32;
+                            <time title="Sun Jan 4 02:32:31 2015 UTC" datetime="2015-01-04T02:32:31+00:00" class="live-timestamp">3 天 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/kenman" class="author moderator may-blank id-t2_1mnc2">kenman</a>
+                            <span class="userattrs">[<a class="moderator" title="/r/javascript 的版主，正式發言" href="/r/javascript/about/moderators">M</a>]</span>&#32;-&#32;
+                            <span class="stickied-tagline" title="selected by this subreddit's moderators">stickied post</span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2r9gw0/subreddit_stats_year_of_2014/" class="comments may-blank">2 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rj4l4 even&#32; link " onclick="click_thing(this)" data-fullname="t3_2rj4l4">
+                    <p class="parent"></p>
+                    <span class="rank">1</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">45</div>
+                        <div class="score unvoted">46</div>
+                        <div class="score likes">47</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://www.twitch.tv/SYNTAG" tabindex="1">DevWars LIVE Now! Battle of Developers! Join Us!</a>&#32;
+                            <span class="domain">(<a href="/domain/twitch.tv/">twitch.tv</a>)</span>
+                        </p>
+                        <div class="expando-button collapsed video" onclick="expando_child(this)"></div>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 17:24:15 2015 UTC" datetime="2015-01-06T17:24:15+00:00" class="live-timestamp">10 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/SYNTAG" class="author may-blank id-t2_k84gh">SYNTAG</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rj4l4/devwars_live_now_battle_of_developers_join_us/" class="comments may-blank">11 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                        <script type="text/javascript">
+                        var cache = expando_cache();
+                        cache["t3_2rj4l4_cache"] = " &lt;iframe src=&quot;//www.redditmedia.com/mediaembed/2rj4l4&quot; id=&quot;media-embed-2rj4l4-k34&quot; class=&quot;media-embed&quot; width=&quot;410&quot; height=&quot;310&quot; border=&quot;0&quot; frameBorder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen&gt;&lt;/iframe&gt; ";
+                        </script>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rj6il odd&#32; link " onclick="click_thing(this)" data-fullname="t3_2rj6il">
+                    <p class="parent"></p>
+                    <span class="rank">2</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">15</div>
+                        <div class="score unvoted">16</div>
+                        <div class="score likes">17</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="https://medium.com/@preslavrachev/gulp-vs-grunt-why-one-why-the-other-f5d3b398edc4" tabindex="1">Gulp vs Grunt. Why one? Why the Other?</a>&#32;
+                            <span class="domain">(<a href="/domain/medium.com/">medium.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 17:39:23 2015 UTC" datetime="2015-01-06T17:39:23+00:00" class="live-timestamp">10 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/preslavrachev" class="author may-blank id-t2_ggszd">preslavrachev</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rj6il/gulp_vs_grunt_why_one_why_the_other/" class="comments may-blank">16 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2riiz0 even&#32; link " onclick="click_thing(this)" data-fullname="t3_2riiz0">
+                    <p class="parent"></p>
+                    <span class="rank">3</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">28</div>
+                        <div class="score unvoted">29</div>
+                        <div class="score likes">30</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://jsbooks.revolunet.com/" tabindex="1">JSbooks - Free Javascript Ebooks</a>&#32;
+                            <span class="domain">(<a href="/domain/jsbooks.revolunet.com/">jsbooks.revolunet.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 14:06:35 2015 UTC" datetime="2015-01-06T14:06:35+00:00" class="live-timestamp">14 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/amischol" class="author may-blank id-t2_5li1q">amischol</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2riiz0/jsbooks_free_javascript_ebooks/" class="comments may-blank">2 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rifcv odd&#32; link " onclick="click_thing(this)" data-fullname="t3_2rifcv">
+                    <p class="parent"></p>
+                    <span class="rank">4</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">32</div>
+                        <div class="score unvoted">33</div>
+                        <div class="score likes">34</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="https://6to5.org/" tabindex="1">Use JavaScript of the future in current browsers and environments.</a>&#32;
+                            <span class="domain">(<a href="/domain/6to5.org/">6to5.org</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 13:22:18 2015 UTC" datetime="2015-01-06T13:22:18+00:00" class="live-timestamp">14 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/krasimirtsonev" class="author may-blank id-t2_f9uqw">krasimirtsonev</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rifcv/use_javascript_of_the_future_in_current_browsers/" class="comments may-blank">4 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rjmrp even&#32; link " onclick="click_thing(this)" data-fullname="t3_2rjmrp">
+                    <p class="parent"></p>
+                    <span class="rank">5</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">9</div>
+                        <div class="score unvoted">10</div>
+                        <div class="score likes">11</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://www.techieat.com/select-text-and-replace-with-jquery-textrange-plugin-118" tabindex="1">Select Text and replace With jquery Textrange plugin</a>&#32;
+                            <span class="domain">(<a href="/domain/techieat.com/">techieat.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 19:44:24 2015 UTC" datetime="2015-01-06T19:44:24+00:00" class="live-timestamp">8 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/phill_hudges" class="author may-blank id-t2_jn2ue">phill_hudges</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rjmrp/select_text_and_replace_with_jquery_textrange/" class="comments empty may-blank">留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rkta4 odd&#32; link self" onclick="click_thing(this)" data-fullname="t3_2rkta4">
+                    <p class="parent"></p>
+                    <span class="rank">6</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">2</div>
+                        <div class="score unvoted">3</div>
+                        <div class="score likes">4</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="/r/javascript/comments/2rkta4/what_were_the_big_developments_and_trends_in/" tabindex="1">What were the big developments and trends in JavaScript in 2014? What will be big in 2015?</a>&#32;
+                            <span class="domain">(<a href="/r/javascript/">self.javascript</a>)</span>
+                        </p>
+                        <div class="expando-button collapsed selftext" onclick="expando_child(this)"></div>
+                        <p class="tagline">submitted&#32;
+                            <time title="Wed Jan 7 01:12:54 2015 UTC" datetime="2015-01-07T01:12:54+00:00" class="live-timestamp">3 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/azaslavsky" class="author may-blank id-t2_jmr8o">azaslavsky</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rkta4/what_were_the_big_developments_and_trends_in/" class="comments empty may-blank">留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rj6th even&#32; link self" onclick="click_thing(this)" data-fullname="t3_2rj6th">
+                    <p class="parent"></p>
+                    <span class="rank">7</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">8</div>
+                        <div class="score unvoted">9</div>
+                        <div class="score likes">10</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="/r/javascript/comments/2rj6th/javascript_escape_room_game_ive_been_working_on/" tabindex="1">Javascript Escape Room game I've been working on</a>&#32;
+                            <span class="domain">(<a href="/r/javascript/">self.javascript</a>)</span>
+                        </p>
+                        <div class="expando-button collapsed selftext" onclick="expando_child(this)"></div>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 17:42:03 2015 UTC" datetime="2015-01-06T17:42:03+00:00" class="live-timestamp">10 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/madoxster" class="author may-blank id-t2_4ih9i">madoxster</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rj6th/javascript_escape_room_game_ive_been_working_on/" class="comments may-blank">18 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rjeeo odd&#32; link " onclick="click_thing(this)" data-fullname="t3_2rjeeo">
+                    <p class="parent"></p>
+                    <span class="rank">8</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">5</div>
+                        <div class="score unvoted">6</div>
+                        <div class="score likes">7</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://echarts.baidu.com/index-en.html" tabindex="1">ECharts</a>&#32;
+                            <span class="domain">(<a href="/domain/echarts.baidu.com/">echarts.baidu.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 18:40:13 2015 UTC" datetime="2015-01-06T18:40:13+00:00" class="live-timestamp">9 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/tpk1024" class="author may-blank id-t2_3qjfw">tpk1024</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rjeeo/echarts/" class="comments empty may-blank">留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rew9w even&#32; link " onclick="click_thing(this)" data-fullname="t3_2rew9w">
+                    <p class="parent"></p>
+                    <span class="rank">9</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">718</div>
+                        <div class="score unvoted">719</div>
+                        <div class="score likes">720</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://i.imgur.com/MilKmny.png" tabindex="1">JavaScript, also known as Java for short...</a>&#32;
+                            <span class="domain">(<a href="/domain/i.imgur.com/">i.imgur.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Mon Jan 5 16:40:58 2015 UTC" datetime="2015-01-05T08:40:58-08:00" class="live-timestamp">1 天 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/Bosola" class="author may-blank id-t2_4vm74">Bosola</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rew9w/javascript_also_known_as_java_for_short/" class="comments may-blank">252 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rl57e odd&#32; link " onclick="click_thing(this)" data-fullname="t3_2rl57e">
+                    <p class="parent"></p>
+                    <span class="rank">10</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score likes">&bull;</div>
+                        <div class="score unvoted">&bull;</div>
+                        <div class="score dislikes">&bull;</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://jstutor.herokuapp.com/" tabindex="1" rel="nofollow">Visualize JS execution</a>&#32;
+                            <span class="domain">(<a href="/domain/jstutor.herokuapp.com/">jstutor.herokuapp.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Wed Jan 7 02:53:55 2015 UTC" datetime="2015-01-07T02:53:55+00:00" class="live-timestamp">1 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/init0" class="author may-blank id-t2_3lqms">init0</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rl57e/visualize_js_execution/" class="comments may-blank">1 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rk56j even&#32; link self" onclick="click_thing(this)" data-fullname="t3_2rk56j">
+                    <p class="parent"></p>
+                    <span class="rank">11</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">1</div>
+                        <div class="score unvoted">2</div>
+                        <div class="score likes">3</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="/r/javascript/comments/2rk56j/accessing_objects_in_an_array/" tabindex="1">Accessing Objects in an Array</a>&#32;
+                            <span class="domain">(<a href="/r/javascript/">self.javascript</a>)</span>
+                        </p>
+                        <div class="expando-button collapsed selftext" onclick="expando_child(this)"></div>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 22:01:18 2015 UTC" datetime="2015-01-06T22:01:18+00:00" class="live-timestamp">6 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/TheRavyn" class="author may-blank id-t2_aqn9t">TheRavyn</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rk56j/accessing_objects_in_an_array/" class="comments may-blank">6 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rk4ye odd&#32; link " onclick="click_thing(this)" data-fullname="t3_2rk4ye">
+                    <p class="parent"></p>
+                    <span class="rank">12</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">1</div>
+                        <div class="score unvoted">2</div>
+                        <div class="score likes">3</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://programmers.stackexchange.com/q/268124/1299" tabindex="1">Does using == in JavaScript ever make sense? (Programmers.SE)</a>&#32;
+                            <span class="domain">(<a href="/domain/programmers.stackexchange.com/">programmers.stackexchange.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 21:59:35 2015 UTC" datetime="2015-01-06T21:59:35+00:00" class="live-timestamp">6 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/stymiee" class="author may-blank id-t2_sokw">stymiee</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rk4ye/does_using_in_javascript_ever_make_sense/" class="comments may-blank">3 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rit4r even&#32; link self" onclick="click_thing(this)" data-fullname="t3_2rit4r">
+                    <p class="parent"></p>
+                    <span class="rank">13</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">5</div>
+                        <div class="score unvoted">6</div>
+                        <div class="score likes">7</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="/r/javascript/comments/2rit4r/early_return_statements_in_functions/" tabindex="1">Early return statements in functions</a>&#32;
+                            <span class="domain">(<a href="/r/javascript/">self.javascript</a>)</span>
+                        </p>
+                        <div class="expando-button collapsed selftext" onclick="expando_child(this)"></div>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 15:48:20 2015 UTC" datetime="2015-01-06T15:48:20+00:00" class="live-timestamp">12 小時 前</time>&#32;
+                            <time class="edited-timestamp" title="最後編輯 12 小時 前" datetime="2015-01-06T16:10:24+00:00">*</time>&#32;by&#32;<a href="http://www.reddit.com/user/whostolemyhat" class="author may-blank id-t2_4kq1p">whostolemyhat</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rit4r/early_return_statements_in_functions/" class="comments may-blank">10 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rkv9m odd&#32; link " onclick="click_thing(this)" data-fullname="t3_2rkv9m">
+                    <p class="parent"></p>
+                    <span class="rank">14</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">0</div>
+                        <div class="score unvoted">1</div>
+                        <div class="score likes">2</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="https://www.youtube.com/watch?v=VLpjfr7mgT0" tabindex="1" rel="nofollow">Mineshaft JS</a>&#32;
+                            <span class="domain">(<a href="/domain/youtube.com/">youtube.com</a>)</span>
+                        </p>
+                        <div class="expando-button collapsed video" onclick="expando_child(this)"></div>
+                        <p class="tagline">submitted&#32;
+                            <time title="Wed Jan 7 01:29:46 2015 UTC" datetime="2015-01-07T01:29:46+00:00" class="live-timestamp">2 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/tigrisgames" class="author may-blank id-t2_j9ofp">tigrisgames</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rkv9m/mineshaft_js/" class="comments empty may-blank">留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                        <script type="text/javascript">
+                        var cache = expando_cache();
+                        cache["t3_2rkv9m_cache"] = " &lt;iframe src=&quot;//www.redditmedia.com/mediaembed/2rkv9m&quot; id=&quot;media-embed-2rkv9m-ekw&quot; class=&quot;media-embed&quot; width=&quot;610&quot; height=&quot;348&quot; border=&quot;0&quot; frameBorder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen&gt;&lt;/iframe&gt; ";
+                        </script>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2riic8 even&#32; link " onclick="click_thing(this)" data-fullname="t3_2riic8">
+                    <p class="parent"></p>
+                    <span class="rank">15</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">8</div>
+                        <div class="score unvoted">9</div>
+                        <div class="score likes">10</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="https://github.com/indutny/hash.js" tabindex="1">Hash functions in pure javascript</a>&#32;
+                            <span class="domain">(<a href="/domain/github.com/">github.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 13:59:16 2015 UTC" datetime="2015-01-06T13:59:16+00:00" class="live-timestamp">14 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/juanpabloaj" class="author may-blank id-t2_68joj">juanpabloaj</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2riic8/hash_functions_in_pure_javascript/" class="comments empty may-blank">留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rkdwd odd&#32; link " onclick="click_thing(this)" data-fullname="t3_2rkdwd">
+                    <p class="parent"></p>
+                    <span class="rank">16</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">0</div>
+                        <div class="score unvoted">1</div>
+                        <div class="score likes">2</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://react.rocks/tag/DatePicker" tabindex="1" rel="nofollow">ReactJS is a highly performant view layer for writing... date pickers?</a>&#32;
+                            <span class="domain">(<a href="/domain/react.rocks/">react.rocks</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 23:07:44 2015 UTC" datetime="2015-01-06T23:07:44+00:00" class="live-timestamp">5 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/Gaurav0" class="author may-blank id-t2_4niog">Gaurav0</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rkdwd/reactjs_is_a_highly_performant_view_layer_for/" class="comments may-blank">2 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2riqgp even&#32; link " onclick="click_thing(this)" data-fullname="t3_2riqgp">
+                    <p class="parent"></p>
+                    <span class="rank">17</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">3</div>
+                        <div class="score unvoted">4</div>
+                        <div class="score likes">5</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://codeutopia.net/blog/2015/01/06/es6-what-are-the-benefits-of-the-new-features-in-practice/" tabindex="1">ES6: What are the benefits of the new features in practice?</a>&#32;
+                            <span class="domain">(<a href="/domain/codeutopia.net/">codeutopia.net</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 15:23:09 2015 UTC" datetime="2015-01-06T15:23:09+00:00" class="live-timestamp">12 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/jhartikainen" class="author may-blank id-t2_88llg">jhartikainen</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2riqgp/es6_what_are_the_benefits_of_the_new_features_in/" class="comments may-blank">6 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rjl31 odd&#32; link " onclick="click_thing(this)" data-fullname="t3_2rjl31">
+                    <p class="parent"></p>
+                    <span class="rank">18</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">0</div>
+                        <div class="score unvoted">1</div>
+                        <div class="score likes">2</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="https://www.youtube.com/watch?v=qWr7x9wk6_c" tabindex="1" rel="nofollow">The tools and patterns for building large-scale Backbone applications</a>&#32;
+                            <span class="domain">(<a href="/domain/youtube.com/">youtube.com</a>)</span>
+                        </p>
+                        <div class="expando-button collapsed video" onclick="expando_child(this)"></div>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 19:31:13 2015 UTC" datetime="2015-01-06T19:31:13+00:00" class="live-timestamp">8 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/cygned" class="author may-blank id-t2_imzc9">cygned</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rjl31/the_tools_and_patterns_for_building_largescale/" class="comments empty may-blank">留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                        <script type="text/javascript">
+                        var cache = expando_cache();
+                        cache["t3_2rjl31_cache"] = " &lt;iframe src=&quot;//www.redditmedia.com/mediaembed/2rjl31&quot; id=&quot;media-embed-2rjl31-g1p&quot; class=&quot;media-embed&quot; width=&quot;610&quot; height=&quot;348&quot; border=&quot;0&quot; frameBorder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen&gt;&lt;/iframe&gt; ";
+                        </script>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rj07x even&#32; link " onclick="click_thing(this)" data-fullname="t3_2rj07x">
+                    <p class="parent"></p>
+                    <span class="rank">19</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">0</div>
+                        <div class="score unvoted">1</div>
+                        <div class="score likes">2</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://marcells.github.io/node-build-monitor" tabindex="1" rel="nofollow">node-build-monitor - A beautiful, clean and multi-service Build Monitor written in Node.js, which is runnable with Docker</a>&#32;
+                            <span class="domain">(<a href="/domain/marcells.github.io/">marcells.github.io</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 16:49:23 2015 UTC" datetime="2015-01-06T16:49:23+00:00" class="live-timestamp">11 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/marcellsp" class="author may-blank id-t2_fiwrv">marcellsp</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rj07x/nodebuildmonitor_a_beautiful_clean_and/" class="comments empty may-blank">留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2riv4z odd&#32; link " onclick="click_thing(this)" data-fullname="t3_2riv4z">
+                    <p class="parent"></p>
+                    <span class="rank">20</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">0</div>
+                        <div class="score unvoted">0</div>
+                        <div class="score likes">1</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="https://github.com/addyosmani/bubblesort" tabindex="1" rel="nofollow">Bubble Sort Algorithm in JavaScript</a>&#32;
+                            <span class="domain">(<a href="/domain/github.com/">github.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 16:06:26 2015 UTC" datetime="2015-01-06T16:06:26+00:00" class="live-timestamp">12 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/jstuartmill" class="author may-blank id-t2_fgc8w">jstuartmill</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2riv4z/bubble_sort_algorithm_in_javascript/" class="comments may-blank">11 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rioec even&#32; link " onclick="click_thing(this)" data-fullname="t3_2rioec">
+                    <p class="parent"></p>
+                    <span class="rank">21</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">0</div>
+                        <div class="score unvoted">1</div>
+                        <div class="score likes">2</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://strongloop.com/strongblog/arc-node-js-api-announcement/" tabindex="1" rel="nofollow">Announcing StrongLoop Arc: The First Complete API Lifecycle UI for Node.js</a>&#32;
+                            <span class="domain">(<a href="/domain/strongloop.com/">strongloop.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 15:03:28 2015 UTC" datetime="2015-01-06T15:03:28+00:00" class="live-timestamp">13 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/rauschma" class="author may-blank id-t2_4qt04">rauschma</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rioec/announcing_strongloop_arc_the_first_complete_api/" class="comments empty may-blank">留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2ri50z odd&#32; link " onclick="click_thing(this)" data-fullname="t3_2ri50z">
+                    <p class="parent"></p>
+                    <span class="rank">22</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">2</div>
+                        <div class="score unvoted">3</div>
+                        <div class="score likes">4</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="https://github.com/miguelmota/getprop" tabindex="1">Easier way to get a property from nested object</a>&#32;
+                            <span class="domain">(<a href="/domain/github.com/">github.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 10:47:04 2015 UTC" datetime="2015-01-06T10:47:04+00:00" class="live-timestamp">17 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/mooogs" class="author may-blank id-t2_b4si3">mooogs</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2ri50z/easier_way_to_get_a_property_from_nested_object/" class="comments may-blank">7 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rijt3 even&#32; link " onclick="click_thing(this)" data-fullname="t3_2rijt3">
+                    <p class="parent"></p>
+                    <span class="rank">23</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">0</div>
+                        <div class="score unvoted">0</div>
+                        <div class="score likes">1</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://szabgab.com/the-popularity-of-javascript-in-2014.html" tabindex="1" rel="nofollow">The most popular sites about JavaScript in 2014</a>&#32;
+                            <span class="domain">(<a href="/domain/szabgab.com/">szabgab.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 14:15:47 2015 UTC" datetime="2015-01-06T14:15:47+00:00" class="live-timestamp">14 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/szabgab" class="author may-blank id-t2_347k6">szabgab</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rijt3/the_most_popular_sites_about_javascript_in_2014/" class="comments empty may-blank">留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2rig72 odd&#32; link " onclick="click_thing(this)" data-fullname="t3_2rig72">
+                    <p class="parent"></p>
+                    <span class="rank">24</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">0</div>
+                        <div class="score unvoted">1</div>
+                        <div class="score likes">2</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="http://stackoverflow.com/q/2846283/1288" tabindex="1" rel="nofollow">What are the rules for JavaScript's automatic semicolon insertion (ASI)?</a>&#32;
+                            <span class="domain">(<a href="/domain/stackoverflow.com/">stackoverflow.com</a>)</span>
+                        </p>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 13:33:13 2015 UTC" datetime="2015-01-06T13:33:13+00:00" class="live-timestamp">14 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/cruise02" class="author may-blank id-t2_1vkv">cruise02</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2rig72/what_are_the_rules_for_javascripts_automatic/" class="comments may-blank">1 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class=" thing id-t3_2ri78p even&#32; link self" onclick="click_thing(this)" data-fullname="t3_2ri78p">
+                    <p class="parent"></p>
+                    <span class="rank">25</span>
+                    <div class="midcol unvoted">
+                        <div class="arrow up login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="推" tabindex="0"></div>
+                        <div class="score dislikes">0</div>
+                        <div class="score unvoted">0</div>
+                        <div class="score likes">0</div>
+                        <div class="arrow down login-required" onclick="$(this).vote(r.config.vote_hash, null, event)" role="button" aria-label="噓" tabindex="0"></div>
+                    </div>
+                    <div class="entry unvoted">
+                        <p class="title"><a class="title may-blank loggedin" href="/r/javascript/comments/2ri78p/best_practices_for_programming_javascript_modules/" tabindex="1" rel="nofollow">Best Practices for Programming Javascript Modules</a>&#32;
+                            <span class="domain">(<a href="/r/javascript/">self.javascript</a>)</span>
+                        </p>
+                        <div class="expando-button collapsed selftext" onclick="expando_child(this)"></div>
+                        <p class="tagline">submitted&#32;
+                            <time title="Tue Jan 6 11:22:45 2015 UTC" datetime="2015-01-06T11:22:45+00:00" class="live-timestamp">16 小時 前</time>&#32;by&#32;<a href="http://www.reddit.com/user/polyglotdev" class="author may-blank id-t2_jpjje">polyglotdev</a>
+                            <span class="userattrs"></span>
+                        </p>
+                        <ul class="flat-list buttons">
+                            <li class="first"><a href="http://www.reddit.com/r/javascript/comments/2ri78p/best_practices_for_programming_javascript_modules/" class="comments may-blank">1 留言</a>
+                            </li>
+                            <li class="share">
+                                <span class="share-button toggle" style=""><a class="option active login-required" href="#" tabindex="100" onclick="return toggle(this, share, cancelShare)">分享</a><a class="option " href="#">取消</a>
+                                </span>
+                            </li>
+                            <li class="link-save-button save-button"><a href="#">儲存</a>
+                            </li>
+                            <li>
+                                <form action="/post/hide" method="post" class="state-button hide-button">
+                                    <input type="hidden" name="executed" value="隱藏" />
+                                    <span><a href="javascript:void(0)" onclick="change_state(this, 'hide', hide_thing);">隱藏</a>
+                                    </span>
+                                </form>
+                            </li>
+                            <li class="report-button"><a href="javascript:void(0)" class="action-thing" data-action-form="#report-action-form">檢舉</a>
+                            </li>
+                        </ul>
+                        <div class="expando" style='display: none'>
+                            <span class="error">loading...</span>
+                        </div>
+                    </div>
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="clearleft"></div>
+                <div class="nav-buttons">
+                    <span class="nextprev">繼續閱讀：&#32;<a href="http://www.reddit.com/r/javascript/?count=25&amp;after=t3_2ri78p" rel="nofollow next">下一頁 &rsaquo;</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <form id="report-action-form" class="action-form report-action-form rounded" data-form-action="report">
+            <input type="hidden" name="thing_id" value="thing-fullname">
+            <span class="reason-prompt">why are you reporting this?</span>
+            <ol>
+                <li>
+                    <label>
+                        <input type="radio" name="reason" value="spam">垃圾訊息</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="reason" value="vote manipulation">vote manipulation</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="reason" value="personal information">personal information</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="reason" value="sexualizing minors">sexualizing minors</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="reason" value="breaking reddit">breaking reddit</label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="reason" value="other">other (max 100 characters):</label>
+                    <input name="other_reason" value="" maxlength="100" type="text" disabled>
+                </li>
+            </ol>
+            <button type="submit" class="btn submit-action-thing" disabled>送出</button>
+            <button type="button" class="btn cancel-action-thing">取消</button>
+            <span class="status"></span>
+            <span class="error TOO_LONG field-reason" style="display:none"></span>
+        </form>
+        <div class="gold-wrap cloneable-comment">
+            <h1 class="gold-banner"><a href="/gold">reddit 金幣</a>
+            </h1>
+            <div class="fancy">
+                <div class="fancy-inner">
+                    <div class="fancy-content">
+                        <div class="gold-form gold-payment">
+                            <button class="close-button">關閉</button>
+                            <div class="container">
+                                <h2 class="sidelines">
+                                    <span>In Summation</span>
+                                </h2>
+                                <div class="transaction-summary">
+                                    <p>想要對這篇
+                                        <em>%(recipient)s</em>的留言表達感謝嗎？您可以送給他們一個月份的 <a href="/gold/about">reddit 金幣</a>。</p>
+
+                                </div>
+                            </div>
+                            <ul class="indent">
+                                <li>
+                                    <input type="checkbox" id="signed-false" name="signed" checked>make my gift anonymous</li>
+                                <li>
+                                    <input type="checkbox" id="message" name="message">include a message</li>
+                                <li>
+                                    <textarea rows="3" cols="50" id="giftmessage" name="giftmessage" placeholder="enter your message" class="hidden giftmessage" maxlength="500"></textarea>
+                                </li>
+                            </ul>
+                            <div class="buttons">
+                                <p>請選擇付款方式</p>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="gold-checkout" data-vendor="paypal" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="custom" value="" class="passthrough">
+                                    <input type="hidden" name="quantity" value="1">
+                                    <input type="hidden" name="hosted_button_id" value="HDENEQ8QWLTML">
+                                    <button type="submit" class="btn gold-button">Paypal</button>
+                                </form>
+                                <button class="btn coinbase-gold gold-button gold-checkout" data-vendor="coinbase">比特幣</button>
+                                <input type="hidden" name="cbbaseurl" value="https://coinbase.com/checkouts/6d670dea8505cc8805ae2c00294599b2">
+                                <input type="hidden" name="custom" value="" class="passthrough">
+                                <span class="gold-checkout">
+                                    <button class="btn stripe-gold gold-button">信用卡</button>
+                                    <input type="hidden" name="custom" value="" class="passthrough">
+                                </span>
+                                <div class="note">
+                                    <p>Give gold often? Consider <a href="/creddits">buying creddits to use</a>, they&#39;re 40% cheaper if purchased in a set of 12.</p>
+
+                                    <p>Would you like to <a href="/gilding">learn more about giving gold</a>?</p>
+
+                                </div>
+                            </div>
+                            <div class="throbber"></div>
+                            <span role="presentation" class="gold-snoo" title="Felicitations on this momentous occasion!"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gold-wrap cloneable-link">
+            <h1 class="gold-banner"><a href="/gold">reddit 金幣</a>
+            </h1>
+            <div class="fancy">
+                <div class="fancy-inner">
+                    <div class="fancy-content">
+                        <div class="gold-form gold-payment">
+                            <button class="close-button">關閉</button>
+                            <div class="container">
+                                <h2 class="sidelines">
+                                    <span>In Summation</span>
+                                </h2>
+                                <div class="transaction-summary">
+                                    <p>Want to say thanks to
+                                        <em>%(recipient)s</em>for this submission? Give them a month of <a href="/gold/about">reddit gold</a>.</p>
+
+                                </div>
+                            </div>
+                            <ul class="indent">
+                                <li>
+                                    <input type="checkbox" id="signed-false" name="signed" checked>make my gift anonymous</li>
+                                <li>
+                                    <input type="checkbox" id="message" name="message">include a message</li>
+                                <li>
+                                    <textarea rows="3" cols="50" id="giftmessage" name="giftmessage" placeholder="enter your message" class="hidden giftmessage" maxlength="500"></textarea>
+                                </li>
+                            </ul>
+                            <div class="buttons">
+                                <p>請選擇付款方式</p>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" class="gold-checkout" data-vendor="paypal" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="custom" value="" class="passthrough">
+                                    <input type="hidden" name="quantity" value="1">
+                                    <input type="hidden" name="hosted_button_id" value="HDENEQ8QWLTML">
+                                    <button type="submit" class="btn gold-button">Paypal</button>
+                                </form>
+                                <button class="btn coinbase-gold gold-button gold-checkout" data-vendor="coinbase">比特幣</button>
+                                <input type="hidden" name="cbbaseurl" value="https://coinbase.com/checkouts/6d670dea8505cc8805ae2c00294599b2">
+                                <input type="hidden" name="custom" value="" class="passthrough">
+                                <span class="gold-checkout">
+                                    <button class="btn stripe-gold gold-button">信用卡</button>
+                                    <input type="hidden" name="custom" value="" class="passthrough">
+                                </span>
+                                <div class="note">
+                                    <p>Give gold often? Consider <a href="/creddits">buying creddits to use</a>, they&#39;re 40% cheaper if purchased in a set of 12.</p>
+
+                                    <p>Would you like to <a href="/gilding">learn more about giving gold</a>?</p>
+
+                                </div>
+                            </div>
+                            <div class="throbber"></div>
+                            <span role="presentation" class="gold-snoo" title="Felicitations on this momentous occasion!"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-parent">
+        <div by-zero class="footer rounded">
+            <div class="col">
+                <ul class="flat-vert hover">
+                    <li class="flat-vert title">關於</li>
+                    <li><a href="http://www.reddit.com/blog/" class="choice">網誌</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://www.reddit.com/about/" class="choice">關於</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://www.reddit.com/about/team/" class="choice">團隊</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://www.reddit.com/code/" class="choice">原始碼</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://www.reddit.com/advertising/" class="choice">廣告</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://www.reddit.com/r/redditjobs/" class="choice">工作</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="flat-vert hover">
+                    <li class="flat-vert title">說明</li>
+                    <li><a href="http://www.reddit.com/wiki/" class="choice">維基</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://www.reddit.com/wiki/faq" class="choice">常見問題</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://www.reddit.com/wiki/reddiquette" class="choice">reddit 站規</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://www.reddit.com/rules/" class="choice">規則</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://www.reddit.com/contact/" class="choice">聯絡我們</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="flat-vert hover">
+                    <li class="flat-vert title">工具</li>
+                    <li><a href="http://i.reddit.com" class="choice">mobile</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="https://addons.mozilla.org/firefox/addon/socialite/" class="choice">firefox 擴充套件</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="https://chrome.google.com/webstore/detail/algjnflpgoopkdijmkalfcifomdhmcbe" class="choice">chrome擴展套件</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://www.reddit.com/r/javascript/buttons/" class="choice">按鈕</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://www.reddit.com/r/javascript/widget/" class="choice">小工具</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="flat-vert hover">
+                    <li class="flat-vert title">&lt;3</li>
+                    <li><a href="http://www.reddit.com/gold/about/" class="buygold choice">reddit 金幣</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://www.reddit.com/store/" class="choice">商店</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://redditgifts.com" class="choice">reddit禮物</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="https://redditama.reddit.com" class="choice">reddit AMA app</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://reddit.tv" class="choice">reddit.tv</a>
+                    </li>
+                    <li>
+                        <span class="separator"></span><a href="http://radioreddit.com" class="choice">reddit電台</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="bottommenu">使用本網站即代表您接受我們的&#32;<a href="http://www.reddit.com/help/useragreement">User Agreement {Genitive}</a>&#32;和&#32;<a href="http://www.reddit.com/help/privacypolicy">Privacy Policy {Genitive}</a>. &copy; 2015 reddit inc. 股份有限公司 保留所有權利</p>
+        <p class="bottommenu">REDDIT and the ALIEN Logo are registered trademarks of reddit inc.</p>
+    </div>
+    <p class="debuginfo">
+        <span class="icon">&pi;</span>&nbsp;
+        <span class="content">Rendered by PID 10309 on&#32; app-11 &#32;at 2015-01-07 04:21:08.343232+00:00 running 4d68bab country code: US.</span>
+    </p>
+    <script type="text/javascript" src="//www.redditstatic.com/reddit.zh.0tegQY_3elA.js"></script>
+</body>
+
+</html>

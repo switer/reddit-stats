@@ -1,0 +1,15 @@
+{
+  "name": "reddit-stats",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies": {
+    "chainjs": "^0.1.9",
+    "colors": "*",
+    "compression": "*",
+    "express": "*",
+    "node-localstorage": "^0.3.6",
+    "request": "^2.51.0"
+  }
+}
